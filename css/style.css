@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cera;
+}
+
+@font-face {
+    font-family: cera;
+    src: url(/css/Cera\ Pro\ Medium.ttf);
+}
+body {
+    background: #fff;
+}
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 35px;
+}
+nav h1 span {
+    font-size: 30px;
+    color: #71B214;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    padding: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: 0.3s;
+}
+a.active {
+    color: #71B214;
+}
+nav ul li a:hover {
+    color: #71B214;
+    transition: 0.3s;
+}
+
+a.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #fff;
+    background: #71B214;
+    box-shadow: 0px 11px 24px rgba(136, 202, 41, 0.41);
+    border-radius: 14px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main div {
+    /* border: 1px solid #000; */
+    width: 50%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.left {
+    position: relative;
+    padding: 50px 80px 0 80px;
+}
+
+.left p.moto {
+    color: #71B214;
+    font-weight: 600;
+}
+
+.left img.lf {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    float: right;
+}
+
+.left h1 {
+    font-size: 50px;
+    line-height: 100%;
+    margin-top: 30px;
+    color: #000;
+}
+.left h1 span {
+    color: #71B214;
+}
+.left p.des {
+    color: #606060;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+div.main_btn {
+    width: 100%;
+}
+
+div.main_btn a {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #71B214;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 14px;
+    margin: 0 20px;
+}
+
+div.main_btn a.active, 
+div.main_btn a:hover {
+    color: #fff;
+    background:#71B214;
+    border: 2px solid #71B214;
+    transition: all 0.4s;
+}
+
+.chef_month {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.chef_img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.chef_img::after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -30%);
+    clip-path: circle(50% at 50% 50%);
+    background: linear-gradient(180deg, #88CA29 0%, #FFFFFF 100%);
+}
+.fam_chef {
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    z-index: 99;
+}
+
+.cont {
+    padding-top: 40px;
+}
+
+.cont p {
+    margin-top: 15px;
+    color: #606060;
+}
+.cont p span {
+    color: #71B214;
+}
+
+.cont h3 {
+    font-size: 23px;
+}
+
+.right {
+    position: relative;
+}
+
+.right .r_bg {
+    width: 100%;
+    opacity: 1;
+    filter: blur(30px);
+}
+
+.right .main_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+}
+
